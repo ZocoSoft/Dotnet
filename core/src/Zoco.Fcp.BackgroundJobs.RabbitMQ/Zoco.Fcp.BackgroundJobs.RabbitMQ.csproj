@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\configureawait.props" />
+  <Import Project="..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Zoco.Fcp.BackgroundJobs.RabbitMQ</AssemblyName>
+    <PackageId>Zoco.Fcp.BackgroundJobs.RabbitMQ</PackageId>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Zoco.Fcp.BackgroundJobs.Abstractions\Zoco.Fcp.BackgroundJobs.Abstractions.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.RabbitMQ\Zoco.Fcp.RabbitMQ.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.Threading\Zoco.Fcp.Threading.csproj" />
+  </ItemGroup>
+
+</Project>

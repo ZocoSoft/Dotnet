@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="..\..\..\common.test.props" />
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <AssemblyName>Zoco.Fcp.AspNetCore.Serilog.Tests</AssemblyName>
+        <PackageId>Zoco.Fcp.AspNetCore.Serilog.Tests</PackageId>
+        <RootNamespace />
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Serilog.AspNetCore" Version="4.1.0" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="$(MicrosoftNETTestSdkPackageVersion)" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\src\Zoco.Fcp.AspNetCore.MultiTenancy\Zoco.Fcp.AspNetCore.MultiTenancy.csproj" />
+        <ProjectReference Include="..\..\src\Zoco.Fcp.AspNetCore.Mvc\Zoco.Fcp.AspNetCore.Mvc.csproj" />
+        <ProjectReference Include="..\..\src\Zoco.Fcp.AspNetCore.Serilog\Zoco.Fcp.AspNetCore.Serilog.csproj" />
+        <ProjectReference Include="..\Zoco.Fcp.AspNetCore.Tests\Zoco.Fcp.AspNetCore.Tests.csproj" />
+    </ItemGroup>
+
+</Project>

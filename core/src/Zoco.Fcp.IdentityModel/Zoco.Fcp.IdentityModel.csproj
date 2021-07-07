@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\configureawait.props" />
+  <Import Project="..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Zoco.Fcp.IdentityModel</AssemblyName>
+    <PackageId>Zoco.Fcp.IdentityModel</PackageId>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IdentityModel" Version="5.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="$(MicrosoftPackageVersion)" />
+    <ProjectReference Include="..\Zoco.Fcp.Caching\Zoco.Fcp.Caching.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.MultiTenancy\Zoco.Fcp.MultiTenancy.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.Threading\Zoco.Fcp.Threading.csproj" />
+  </ItemGroup>
+
+</Project>

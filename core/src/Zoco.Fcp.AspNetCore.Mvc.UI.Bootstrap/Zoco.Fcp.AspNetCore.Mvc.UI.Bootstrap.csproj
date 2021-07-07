@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <Import Project="..\..\..\configureawait.props" />
+  <Import Project="..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+    <AssemblyName>Zoco.Fcp.AspNetCore.Mvc.UI.Bootstrap</AssemblyName>
+    <PackageId>Zoco.Fcp.AspNetCore.Mvc.UI.Bootstrap</PackageId>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <IsPackable>true</IsPackable>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Zoco.Fcp.AspNetCore.Mvc.UI\Zoco.Fcp.AspNetCore.Mvc.UI.csproj" />
+  </ItemGroup>
+
+</Project>

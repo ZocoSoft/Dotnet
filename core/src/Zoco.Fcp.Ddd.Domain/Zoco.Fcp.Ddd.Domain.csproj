@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\configureawait.props" />
+  <Import Project="..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Zoco.Fcp.Ddd.Domain</AssemblyName>
+    <PackageId>Zoco.Fcp.Ddd.Domain</PackageId>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Zoco.Fcp.Auditing\Zoco.Fcp.Auditing.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.Data\Zoco.Fcp.Data.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.EventBus\Zoco.Fcp.EventBus.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.ExceptionHandling\Zoco.Fcp.ExceptionHandling.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.Guids\Zoco.Fcp.Guids.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.MultiTenancy\Zoco.Fcp.MultiTenancy.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.ObjectMapping\Zoco.Fcp.ObjectMapping.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.Specifications\Zoco.Fcp.Specifications.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.Threading\Zoco.Fcp.Threading.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.Timing\Zoco.Fcp.Timing.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.Uow\Zoco.Fcp.Uow.csproj" />
+  </ItemGroup>
+
+</Project>

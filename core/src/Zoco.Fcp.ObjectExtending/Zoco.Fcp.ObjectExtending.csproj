@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\configureawait.props" />
+  <Import Project="..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Zoco.Fcp.ObjectExtending</AssemblyName>
+    <PackageId>Zoco.Fcp.ObjectExtending</PackageId>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Zoco.Fcp.Validation.Abstractions\Zoco.Fcp.Validation.Abstractions.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.Localization.Abstractions\Zoco.Fcp.Localization.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>

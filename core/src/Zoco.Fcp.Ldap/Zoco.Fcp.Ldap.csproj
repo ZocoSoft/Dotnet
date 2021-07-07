@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\configureawait.props" />
+  <Import Project="..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Zoco.Fcp.Ldap</AssemblyName>
+    <PackageId>Zoco.Fcp.Ldap</PackageId>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LdapForNet" Version="2.7.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Volo\Abp\Ldap\Localization\*.json" />
+    <EmbeddedResource Include="Volo\Abp\Ldap\Localization\*.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Zoco.Fcp.Core\Zoco.Fcp.Core.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.Localization\Zoco.Fcp.Localization.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.Settings\Zoco.Fcp.Settings.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.VirtualFileSystem\Zoco.Fcp.VirtualFileSystem.csproj" />
+  </ItemGroup>
+
+</Project>

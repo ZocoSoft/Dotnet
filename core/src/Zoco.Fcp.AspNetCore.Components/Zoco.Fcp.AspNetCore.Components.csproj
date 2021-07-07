@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <Import Project="..\..\..\configureawait.props" />
+  <Import Project="..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>Zoco.Fcp.AspNetCore.Components</AssemblyName>
+    <PackageId>Zoco.Fcp.AspNetCore.Components</PackageId>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Zoco.Fcp.Localization\Zoco.Fcp.Localization.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.ObjectMapping\Zoco.Fcp.ObjectMapping.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.Security\Zoco.Fcp.Security.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components" Version="$(MicrosoftPackageVersion)" />
+  </ItemGroup>
+
+</Project>

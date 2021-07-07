@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\common.test.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Volo\Abp\TextTemplating\Localization\**\*.json" />
+    <None Remove="Volo\Abp\TextTemplating\Localization\**\*.json" />
+    <EmbeddedResource Include="Volo\Abp\TextTemplating\SampleTemplates\**\*.tpl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Zoco.Fcp.Localization\Zoco.Fcp.Localization.csproj" />
+    <ProjectReference Include="..\AbpTestBase\AbpTestBase.csproj" />
+    <ProjectReference Include="..\..\src\Zoco.Fcp.TextTemplating\Zoco.Fcp.TextTemplating.csproj" />
+    <ProjectReference Include="..\..\src\Zoco.Fcp.Autofac\Zoco.Fcp.Autofac.csproj" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="$(MicrosoftNETTestSdkPackageVersion)" />
+  </ItemGroup>
+
+</Project>

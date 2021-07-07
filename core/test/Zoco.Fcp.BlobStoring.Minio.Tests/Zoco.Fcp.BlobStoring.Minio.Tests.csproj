@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\..\common.test.props" />
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace />
+    <UserSecretsId>9f0d2c00-80c1-435b-bfab-2c39c8249091</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Zoco.Fcp.BlobStoring.Minio\Zoco.Fcp.BlobStoring.Minio.csproj" />
+    <ProjectReference Include="..\..\src\Zoco.Fcp.Autofac\Zoco.Fcp.Autofac.csproj" />
+    <ProjectReference Include="..\AbpTestBase\AbpTestBase.csproj" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="$(MicrosoftNETTestSdkPackageVersion)" />
+    <ProjectReference Include="..\Zoco.Fcp.BlobStoring.Tests\Zoco.Fcp.BlobStoring.Tests.csproj" />
+  </ItemGroup>
+
+</Project>

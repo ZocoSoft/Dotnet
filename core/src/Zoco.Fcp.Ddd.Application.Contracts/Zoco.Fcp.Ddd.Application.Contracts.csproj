@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\configureawait.props" />
+  <Import Project="..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Zoco.Fcp.Ddd.Application.Contracts</AssemblyName>
+    <PackageId>Zoco.Fcp.Ddd.Application.Contracts</PackageId>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Volo\Abp\Application\Localization\Resources\AbpDdd\*.json" />
+    <Content Remove="Volo\Abp\Application\Localization\Resources\AbpDdd\*.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Zoco.Fcp.Auditing\Zoco.Fcp.Auditing.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.Localization\Zoco.Fcp.Localization.csproj" />
+  </ItemGroup>
+
+</Project>

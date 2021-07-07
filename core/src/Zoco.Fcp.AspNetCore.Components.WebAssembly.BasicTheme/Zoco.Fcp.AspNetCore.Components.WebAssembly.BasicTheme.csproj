@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+    <Import Project="..\..\..\configureawait.props" />
+    <Import Project="..\..\..\common.props" />
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <PackageId>Zoco.Fcp.AspNetCore.Components.WebAssembly.BasicTheme</PackageId>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Zoco.Fcp.AspNetCore.Components.Web.BasicTheme\Zoco.Fcp.AspNetCore.Components.Web.BasicTheme.csproj" />
+      <ProjectReference Include="..\Zoco.Fcp.AspNetCore.Components.WebAssembly.Theming\Zoco.Fcp.AspNetCore.Components.WebAssembly.Theming.csproj" />
+      <ProjectReference Include="..\Zoco.Fcp.Http.Client.IdentityModel.WebAssembly\Zoco.Fcp.Http.Client.IdentityModel.WebAssembly.csproj" />
+    </ItemGroup>
+
+</Project>

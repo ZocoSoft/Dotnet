@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="..\..\..\common.test.props" />
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <RootNamespace />
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\src\Zoco.Fcp.Autofac\Zoco.Fcp.Autofac.csproj" />
+        <ProjectReference Include="..\..\src\Zoco.Fcp.Ddd.Application\Zoco.Fcp.Ddd.Application.csproj" />
+        <ProjectReference Include="..\..\src\Zoco.Fcp.GlobalFeatures\Zoco.Fcp.GlobalFeatures.csproj" />
+        <ProjectReference Include="..\..\src\Zoco.Fcp.ExceptionHandling\Zoco.Fcp.ExceptionHandling.csproj" />
+        <ProjectReference Include="..\AbpTestBase\AbpTestBase.csproj" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="$(MicrosoftNETTestSdkPackageVersion)" />
+    </ItemGroup>
+
+</Project>

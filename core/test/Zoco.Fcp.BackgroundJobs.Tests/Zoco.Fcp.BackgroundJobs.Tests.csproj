@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\common.test.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>Zoco.Fcp.BackgroundJobs.Tests</AssemblyName>
+    <PackageId>Zoco.Fcp.BackgroundJobs.Tests</PackageId>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Zoco.Fcp.BackgroundJobs\Zoco.Fcp.BackgroundJobs.csproj" />
+    <ProjectReference Include="..\..\src\Zoco.Fcp.Autofac\Zoco.Fcp.Autofac.csproj" />
+    <ProjectReference Include="..\AbpTestBase\AbpTestBase.csproj" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="$(MicrosoftNETTestSdkPackageVersion)" />
+  </ItemGroup>
+
+</Project>

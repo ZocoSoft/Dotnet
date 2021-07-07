@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\configureawait.props" />
+  <Import Project="..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Zoco.Fcp.MultiTenancy</AssemblyName>
+    <PackageId>Zoco.Fcp.MultiTenancy</PackageId>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Zoco.Fcp.Data\Zoco.Fcp.Data.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.EventBus.Abstractions\Zoco.Fcp.EventBus.Abstractions.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.Security\Zoco.Fcp.Security.csproj" />
+  </ItemGroup>
+
+</Project>

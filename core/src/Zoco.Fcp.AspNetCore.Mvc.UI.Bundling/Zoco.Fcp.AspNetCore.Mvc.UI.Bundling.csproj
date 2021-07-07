@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <Import Project="..\..\..\configureawait.props" />
+  <Import Project="..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+    <AssemblyName>Zoco.Fcp.AspNetCore.Mvc.UI.Bundling</AssemblyName>
+    <PackageId>Zoco.Fcp.AspNetCore.Mvc.UI.Bundling</PackageId>
+    <IsPackable>true</IsPackable>
+    <OutputType>Library</OutputType>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Zoco.Fcp.AspNetCore.Mvc.UI.Bootstrap\Zoco.Fcp.AspNetCore.Mvc.UI.Bootstrap.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.AspNetCore.Mvc.UI.Bundling.Abstractions\Zoco.Fcp.AspNetCore.Mvc.UI.Bundling.Abstractions.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.Minify\Zoco.Fcp.Minify.csproj" />
+  </ItemGroup>
+
+</Project>

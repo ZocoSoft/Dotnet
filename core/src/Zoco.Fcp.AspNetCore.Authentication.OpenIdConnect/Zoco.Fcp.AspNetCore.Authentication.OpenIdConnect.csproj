@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="..\..\..\configureawait.props" />
+    <Import Project="..\..\..\common.props" />
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <RootNamespace />
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="$(MicrosoftPackageVersion)" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Zoco.Fcp.AspNetCore.MultiTenancy\Zoco.Fcp.AspNetCore.MultiTenancy.csproj" />
+      <ProjectReference Include="..\Zoco.Fcp.AspNetCore.Authentication.OAuth\Zoco.Fcp.AspNetCore.Authentication.OAuth.csproj" />
+    </ItemGroup>
+
+</Project>

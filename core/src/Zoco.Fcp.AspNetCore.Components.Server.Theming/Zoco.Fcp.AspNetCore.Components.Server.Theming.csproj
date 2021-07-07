@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <Import Project="..\..\..\configureawait.props" />
+    <Import Project="..\..\..\common.props" />
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <IsPackable>true</IsPackable>
+        <OutputType>Library</OutputType>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Zoco.Fcp.AspNetCore.Components.Server\Zoco.Fcp.AspNetCore.Components.Server.csproj" />
+        <ProjectReference Include="..\Zoco.Fcp.AspNetCore.Components.Web.Theming\Zoco.Fcp.AspNetCore.Components.Web.Theming.csproj" />
+        <ProjectReference Include="..\Zoco.Fcp.AspNetCore.Mvc.UI.Bundling\Zoco.Fcp.AspNetCore.Mvc.UI.Bundling.csproj" />
+        <ProjectReference Include="..\Zoco.Fcp.AspNetCore.Mvc.UI.Packages\Zoco.Fcp.AspNetCore.Mvc.UI.Packages.csproj" />
+    </ItemGroup>
+
+</Project>

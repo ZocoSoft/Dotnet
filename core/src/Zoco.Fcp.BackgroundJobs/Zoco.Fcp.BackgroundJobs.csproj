@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\configureawait.props" />
+  <Import Project="..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Zoco.Fcp.BackgroundJobs</AssemblyName>
+    <PackageId>Zoco.Fcp.BackgroundJobs</PackageId>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Zoco.Fcp.BackgroundJobs.Abstractions\Zoco.Fcp.BackgroundJobs.Abstractions.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.BackgroundWorkers\Zoco.Fcp.BackgroundWorkers.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.Core\Zoco.Fcp.Core.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.Guids\Zoco.Fcp.Guids.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.Timing\Zoco.Fcp.Timing.csproj" />
+  </ItemGroup>
+
+</Project>

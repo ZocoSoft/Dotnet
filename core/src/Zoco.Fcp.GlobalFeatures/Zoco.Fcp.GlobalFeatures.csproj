@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="..\..\..\configureawait.props" />
+    <Import Project="..\..\..\common.props" />
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <AssemblyName>Zoco.Fcp.GlobalFeatures</AssemblyName>
+        <PackageId>Zoco.Fcp.GlobalFeatures</PackageId>
+        <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+        <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+        <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+        <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+        <RootNamespace />
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Remove="Volo\Abp\GlobalFeatures\Localization\*.json" />
+        <EmbeddedResource Include="Volo\Abp\GlobalFeatures\Localization\*.json" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Zoco.Fcp.Core\Zoco.Fcp.Core.csproj" />
+        <ProjectReference Include="..\Zoco.Fcp.Localization\Zoco.Fcp.Localization.csproj" />
+        <ProjectReference Include="..\Zoco.Fcp.VirtualFileSystem\Zoco.Fcp.VirtualFileSystem.csproj" />
+        <ProjectReference Include="..\Zoco.Fcp.Authorization.Abstractions\Zoco.Fcp.Authorization.Abstractions.csproj" />
+    </ItemGroup>
+
+</Project>

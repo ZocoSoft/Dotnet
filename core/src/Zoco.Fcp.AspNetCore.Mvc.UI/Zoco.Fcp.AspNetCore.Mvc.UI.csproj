@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <Import Project="..\..\..\configureawait.props" />
+  <Import Project="..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+    <AssemblyName>Zoco.Fcp.AspNetCore.Mvc.UI</AssemblyName>
+    <PackageId>Zoco.Fcp.AspNetCore.Mvc.UI</PackageId>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <IsPackable>true</IsPackable>
+    <OutputType>Library</OutputType>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NUglify" Version="1.13.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Zoco.Fcp.AspNetCore.Mvc\Zoco.Fcp.AspNetCore.Mvc.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.UI.Navigation\Zoco.Fcp.UI.Navigation.csproj" />
+  </ItemGroup>
+
+</Project>

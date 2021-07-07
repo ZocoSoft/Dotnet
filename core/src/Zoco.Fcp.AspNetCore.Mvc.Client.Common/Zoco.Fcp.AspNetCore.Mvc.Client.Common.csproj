@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="..\..\..\configureawait.props" />
+    <Import Project="..\..\..\common.props" />
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <AssemblyName>Zoco.Fcp.AspNetCore.Mvc.Client.Common</AssemblyName>
+        <PackageId>Zoco.Fcp.AspNetCore.Mvc.Client.Common</PackageId>
+        <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+        <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+        <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+        <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+        <RootNamespace />
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Zoco.Fcp.AspNetCore.Mvc.Contracts\Zoco.Fcp.AspNetCore.Mvc.Contracts.csproj" />
+        <ProjectReference Include="..\Zoco.Fcp.Authorization\Zoco.Fcp.Authorization.csproj" />
+        <ProjectReference Include="..\Zoco.Fcp.Caching\Zoco.Fcp.Caching.csproj" />
+        <ProjectReference Include="..\Zoco.Fcp.Features\Zoco.Fcp.Features.csproj" />
+        <ProjectReference Include="..\Zoco.Fcp.Http.Client\Zoco.Fcp.Http.Client.csproj" />
+        <ProjectReference Include="..\Zoco.Fcp.Localization\Zoco.Fcp.Localization.csproj" />
+    </ItemGroup>
+
+</Project>

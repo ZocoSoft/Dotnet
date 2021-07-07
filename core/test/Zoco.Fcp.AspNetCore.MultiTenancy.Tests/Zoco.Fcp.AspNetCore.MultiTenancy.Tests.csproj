@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\common.test.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>Zoco.Fcp.AspNetCore.MultiTenancy.Tests</AssemblyName>
+    <PackageId>Zoco.Fcp.AspNetCore.MultiTenancy.Tests</PackageId>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Zoco.Fcp.AspNetCore.MultiTenancy\Zoco.Fcp.AspNetCore.MultiTenancy.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.AspNetCore.Tests\Zoco.Fcp.AspNetCore.Tests.csproj" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="$(MicrosoftNETTestSdkPackageVersion)" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="..\..\..\configureawait.props" />
+    <Import Project="..\..\..\common.props" />
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <RootNamespace />
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Zoco.Fcp.AspNetCore.Components.WebAssembly\Zoco.Fcp.AspNetCore.Components.WebAssembly.csproj" />
+      <ProjectReference Include="..\Zoco.Fcp.Autofac\Zoco.Fcp.Autofac.csproj" />
+    </ItemGroup>
+
+</Project>

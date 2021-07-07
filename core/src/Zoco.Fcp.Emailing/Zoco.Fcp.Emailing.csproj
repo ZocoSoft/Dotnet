@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\configureawait.props" />
+  <Import Project="..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Zoco.Fcp.Emailing</AssemblyName>
+    <PackageId>Zoco.Fcp.Emailing</PackageId>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Volo\Abp\Emailing\Localization\*.json" />
+    <EmbeddedResource Include="Volo\Abp\Emailing\Localization\*.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Volo\Abp\Emailing\Templates\**\*.tpl" />
+    <EmbeddedResource Include="Volo\Abp\Emailing\Templates\**\*.tpl" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Zoco.Fcp.BackgroundJobs.Abstractions\Zoco.Fcp.BackgroundJobs.Abstractions.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.Localization\Zoco.Fcp.Localization.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.Settings\Zoco.Fcp.Settings.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.TextTemplating\Zoco.Fcp.TextTemplating.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.VirtualFileSystem\Zoco.Fcp.VirtualFileSystem.csproj" />
+  </ItemGroup>
+
+</Project>

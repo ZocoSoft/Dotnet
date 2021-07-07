@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\configureawait.props" />
+  <Import Project="..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Zoco.Fcp.Http.Client</AssemblyName>
+    <PackageId>Zoco.Fcp.Http.Client</PackageId>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Http" Version="$(MicrosoftPackageVersion)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Zoco.Fcp.Castle.Core\Zoco.Fcp.Castle.Core.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.ExceptionHandling\Zoco.Fcp.ExceptionHandling.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.Http\Zoco.Fcp.Http.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.MultiTenancy\Zoco.Fcp.MultiTenancy.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.Threading\Zoco.Fcp.Threading.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.Validation\Zoco.Fcp.Validation.csproj" />
+  </ItemGroup>
+
+</Project>

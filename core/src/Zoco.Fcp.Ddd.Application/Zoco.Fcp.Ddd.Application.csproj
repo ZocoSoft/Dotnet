@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\..\configureawait.props" />
+  <Import Project="..\..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Zoco.Fcp.Ddd.Application</AssemblyName>
+    <PackageId>Zoco.Fcp.Ddd.Application</PackageId>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Zoco.Fcp.Authorization\Zoco.Fcp.Authorization.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.Ddd.Application.Contracts\Zoco.Fcp.Ddd.Application.Contracts.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.Ddd.Domain\Zoco.Fcp.Ddd.Domain.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.Features\Zoco.Fcp.Features.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.GlobalFeatures\Zoco.Fcp.GlobalFeatures.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.Http.Abstractions\Zoco.Fcp.Http.Abstractions.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.Localization\Zoco.Fcp.Localization.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.ObjectMapping\Zoco.Fcp.ObjectMapping.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.Security\Zoco.Fcp.Security.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.Settings\Zoco.Fcp.Settings.csproj" />
+    <ProjectReference Include="..\Zoco.Fcp.Validation\Zoco.Fcp.Validation.csproj" />
+  </ItemGroup>
+
+</Project>
