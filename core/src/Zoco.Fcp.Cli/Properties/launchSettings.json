@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Zoco.Fcp.Cli": {
+      "commandName": "Project",
+      "commandLineArgs": "create Acme.BookStore"
+    }
+  }
+}

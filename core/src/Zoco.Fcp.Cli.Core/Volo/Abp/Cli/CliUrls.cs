@@ -2,7 +2,7 @@
 {
     public static class CliUrls
     {
-#if DEBUG
+#if !DEBUG
         public const string WwwAbpIo = WwwAbpIoDevelopment;
 
         public const string AccountAbpIo = AccountAbpIoDevelopment;
