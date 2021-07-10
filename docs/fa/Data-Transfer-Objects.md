@@ -1,6 +1,6 @@
 # Data Transfer Objects
 
-## Introduction
+## معرفی
 
 **Data Transfer Objects** (DTO) are used to transfer data between the **Application Layer** and the **Presentation Layer** or other type of clients.
 
